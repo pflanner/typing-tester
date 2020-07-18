@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Typing</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="text-center">
+    <h1>Typing Tester</h1>
+    <h6>Use any text you'd like to test your typing. Enter the text in the text box, press "Use This Text", then type. Timing starts when you start typing.</h6>
+    <div class="container">
+        <textarea id="input-text"></textarea>
+        <br>
+        <button id="btn-change-text" class="btn btn-light">Use This Text</button>
+    </div>
+
+    <div class="container text-left border">
+        <pre id="typing-text">The quick brown fox jumps over the lazy dog.</pre>
+    </div>
+
+    <!-- stats modal -->
+    <div id="stats-modal" class="modal">
+        <div class="modal-content card animate-top">
+            <header class="modal-header my-container">
+                <h2>Stats</h2>
+                <span class="close">&times;</span>
+            </header>
+            <div id="modal-text" class="my-container">
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="modal.js"></script>
+<script src="typing.js"></script>
+
+</html>
